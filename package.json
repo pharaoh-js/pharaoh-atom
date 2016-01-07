@@ -1,5 +1,5 @@
 {
-  "name": "pharaoh",
+  "name": "pharaoh-atom",
   "main": "./lib/pharaoh",
   "version": "0.1.0",
   "description": "Broadcast your code to students",
@@ -9,7 +9,7 @@
       "firepad:unshare"
     ]
   },
-  "repository": "https://github.com/pharaoh-js/atom-pharaoh",
+  "repository": "https://github.com/pharaoh-js/pharaoh-atom",
   "license": "MIT",
   "engines": {
     "atom": ">=0.185.0 <2.0.0"
