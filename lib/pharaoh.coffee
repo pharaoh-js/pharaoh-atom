@@ -5,7 +5,7 @@ module.exports =
   config:
     firebaseUrl:
       type: 'string'
-      default: 'https://pharaohjs.firebaseio.com'
+      default: 'https://pharaoh-sands.firebaseio.com'
 
     shareStack: []
 
