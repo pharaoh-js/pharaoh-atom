@@ -7,7 +7,7 @@ Firepad               = require './firepad-lib'
 module.exports =
   class PharaohShare
 
-    constructor: (@ditor, @streamIdentifier) ->
+    constructor: (@editor, @streamIdentifier) ->
       @emitter       = new Emitter
       @subscriptions = new CompositeDisposable
 
@@ -36,10 +36,10 @@ module.exports =
       @streamIdentifier
 
     remove: ->
-      # @firepad.dispose()
-      # @subscriptions.dispose()
-      # @emitter.emit 'did-destroy'
-      atom.notifications.addWarning('still buggy. please try just closing the pane.')
+      @firepad.dispose()
+      @subscriptions.dispose()
+      @emitter.emit 'did-destroy'
+      # atom.notifications.addWarning('still buggy. please try just closing the pane.')
 
     onDidDestroy: (calback) ->
       @emitter.on 'did-destroy', callback

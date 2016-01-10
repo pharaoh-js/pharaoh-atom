@@ -20,11 +20,11 @@ module.exports =
       @miniEditor.on 'focusout', => @detach()  unless @detaching
 
       @subscriptions = new CompositeDisposable
-      @subscriptions.add atom.commands.add 'atom-workspace', 'core:confirm': =>
+      @subscriptions.add atom.commands.add 'atom-workspace', 'core:confirm' : =>
         @emitter.emit 'confirm', @miniEditor.getText()
         @detach()
 
-      @subscriptions.add atom.commands.add 'atom-workspace', 'core:cancel': => @detach()
+      @subscriptions.add atom.commands.add 'atom-workspace', 'core:cancel'  : => @detach()
 
     detach: ->
       return unless @hasParent()
