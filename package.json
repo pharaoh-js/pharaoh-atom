@@ -1,18 +1,22 @@
 {
-  "name": "pharaoh-atom",
+  "name": "pharaoh",
   "main": "./lib/pharaoh",
   "version": "0.1.0",
   "description": "Broadcast your code to students",
   "activationCommands": {
-    "atom-text-editor": [
+    "atom-workspace": [
       "pharaoh:start",
       "pharaoh:stop"
     ]
   },
   "repository": "https://github.com/pharaoh-js/pharaoh-atom",
   "license": "MIT",
+  "scripts": {
+    "postinstall": "./node_modules/.bin/electron-rebuild"
+  },
   "engines": {
-    "atom": "*"
+    "atom": "*",
+    "node": "*"
   },
   "dependencies": {
     "atom-space-pen-views": "^2.1.0",
@@ -31,5 +35,9 @@
     "firepad",
     "collaboration",
     "share"
-  ]
+  ],
+  "devDependencies": {
+    "electron-prebuilt": "^0.36.3",
+    "electron-rebuild": "^1.1.1"
+  }
 }
