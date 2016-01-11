@@ -2,7 +2,7 @@
   "name": "pharaoh",
   "main": "./lib/pharaoh",
   "version": "0.1.0",
-  "description": "Broadcast your code to students",
+  "description": "Broacast your code, live.",
   "activationCommands": {
     "atom-workspace": [
       "pharaoh:start",
@@ -34,7 +34,10 @@
   "keywords": [
     "firepad",
     "collaboration",
-    "share"
+    "share",
+    "stream",
+    "live",
+    "pair"
   ],
   "devDependencies": {
     "electron-prebuilt": "^0.36.3",

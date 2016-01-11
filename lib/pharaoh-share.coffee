@@ -23,7 +23,7 @@ module.exports =
         else
           @editor.setText ''
         @firepad = Firepad.fromAtom @firebase, @editor, options
-    #     @shareview.show(@streamIdentifier)
+        @shareview.show(@streamIdentifier)
 
     handleEditorEvents: ->
       @subscriptions.add @editor.onDidDestroy =>
@@ -39,7 +39,7 @@ module.exports =
       @firepad.dispose()
       @subscriptions.dispose()
       @emitter.emit 'did-destroy'
-      # atom.notifications.addWarning('still buggy. please try just closing the pane.')
+      atom.notifications.addWarning('still buggy. please try just closing the pane.')
 
-    onDidDestroy: (calback) ->
+    onDidDestroy: (callback) ->
       @emitter.on 'did-destroy', callback
