@@ -15,8 +15,8 @@ module.exports =
 
       @subscriptions = new CompositeDisposable
 
-      @subscriptions.add atom.commands.add 'atom-text-editor', 'pharaoh:start': => @start()
-      @subscriptions.add atom.commands.add 'atom-text-editor', 'pharaoh:stop' : => @stop()
+      @subscriptions.add atom.commands.add 'atom-workspace', 'pharaoh:start': => @start()
+      @subscriptions.add atom.commands.add 'atom-workspace', 'pharaoh:stop' : => @stop()
 
       @subscriptions.add atom.workspace.observeActivePaneItem => @updateStreamView
 
