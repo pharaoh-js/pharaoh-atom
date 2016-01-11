@@ -12,7 +12,7 @@
   "repository": "https://github.com/pharaoh-js/pharaoh-atom",
   "license": "MIT",
   "scripts": {
-    "postinstall": "./node_modules/.bin/electron-rebuild"
+    "postinstall": "./node_modules/.bin/electron-rebuild && apm link"
   },
   "engines": {
     "atom": "*",
