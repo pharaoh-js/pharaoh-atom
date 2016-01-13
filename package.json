@@ -1,7 +1,7 @@
 {
   "name": "pharaoh",
   "main": "./lib/pharaoh",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Broacast your code, live.",
   "activationCommands": {
     "atom-workspace": [

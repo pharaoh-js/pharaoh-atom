@@ -39,7 +39,7 @@ module.exports =
       @firepad.dispose()
       @subscriptions.dispose()
       @emitter.emit 'did-destroy'
-      atom.notifications.addWarning('still buggy. please try just closing the pane.')
+      atom.notifications.addWarning('still buggy. please just close the pane.')
 
     onDidDestroy: (callback) ->
       @emitter.on 'did-destroy', callback
