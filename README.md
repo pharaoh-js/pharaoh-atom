@@ -1,13 +1,19 @@
-## PharaohJS -- Atom Package
+## Pharaoh -- Atom Package
 
-This ~~is the reference implementation~~ _will be_ the prototype of Pharaoh, a technology  
-for live broadcasting of code from an instructor's editor to a student-accessible, read-only  
-client. This repository holds the Atom Package for the instructor. Please see the rest of our  
-org for the student client and other related repos.
+This is a WIP plugin for [Atom](http://atom.io), to enable live broadcasting of code sessions  
+directly from the editor to the [client app](https://github.com/pharaoh-js/pharaoh).
 
-To get started, install this package with `apm install pharaoh-atom`. When you're ready to  
-broadcast, use the `pharoah:start` command. To stop, just use `pharaoh:stop`.
+To get started, `git clone https://github.com/pharaoh-js/pharaoh-atom.git`, `cd pharaoh-atom`,  
+`npm install`, and `apm link`. When you're ready to broadcast, use `pharoah:start` from the  
+command palette. To stop sharing, simply close the pane.
 
-License: WTFPL
+This is very much under development, and development is temporarily paused while we work on a  
+[desktop client](https://github.com/pharaoh-js/Pharaoh/tree/electron).
 
-Thanks: @firebase, @fank, @atom
+Issues are welcome, and pull requests doubly so!
+
+License: WTFPL. Or DBAD. Or anything you like, really.
+
+Huge thanks to @firebase and @fank for giving us a huge headstart on this, and @atom for the  
+great API documentation.
+
