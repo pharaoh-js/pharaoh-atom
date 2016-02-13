@@ -43,3 +43,4 @@ module.exports =
 
     onDidDestroy: (callback) ->
       @emitter.on 'did-destroy', callback
+

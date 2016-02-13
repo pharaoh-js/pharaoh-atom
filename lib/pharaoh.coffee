@@ -88,3 +88,4 @@ module.exports =
 
       if not editorIsStreamd
         atom.notifications.addError('not currently streaming!')
+
