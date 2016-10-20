@@ -45,3 +45,4 @@ module.exports =
 
     onDidConfirm: (callback) ->
       @emitter.on 'confirm', callback
+

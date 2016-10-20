@@ -18,3 +18,4 @@ module.exports =
       # coffeelint disable=no_unnecessary_double_quotes
       @streamInfo.text ""
       # coffeelint enable=no_unnecessary_double_quotes
+
